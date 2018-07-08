@@ -1,0 +1,57 @@
+﻿@model IEnumerable<aspnet_core_hw2_Dushkevych.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2> Posts </h2>
+
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedAt)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Body)
+                </th>
+                <th>
+                    Username
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Likes)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @item.CreatedAt.Substring(0, 10);
+            </td>
+            <td>
+                <a asp-controller="Post" asp-action="PostDetails" asp-route-id="@item.Id">@item.Title</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Body)
+            </td>
+            <td>
+                <a asp-controller="User" asp-action="Index" asp-route-id="@item.UserId">@item.Username</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Likes)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

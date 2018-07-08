@@ -1,0 +1,90 @@
+﻿@model aspnet_core_hw2_Dushkevych.Models.User
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>User @Model.Name</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-12">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="@Model.Avatar" alt="@Model.Name" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-9">
+                        <h4>
+                            @Model.Name
+                        </h4>
+                        <small>
+                            <cite title="@Model.Address.City">
+                                <i class="glyphicon glyphicon-map-marker"></i> @Model.Address.City, @Model.Address.Country, @Model.Address.Zip
+                    </cite>
+                    </small>
+                    <p>
+                        <i class="glyphicon glyphicon-envelope"></i> @Model.Email
+                        <br />
+                        <i class="glyphicon glyphicon-gift"></i> Created at: @Model.CreatedAt
+                    </p>
+                    <div class="btn btn-group">
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" href="#collapsePosts" aria-expanded="false" aria-controls="collapsePosts"> Posts </button>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" href="#collapseComments" aria-expanded="false" aria-controls="collapseComments"> Todos </button>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="collapsePosts">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-md-8"><strong>Title</strong></div>
+                                        <div class="col-md-4"><strong>Likes</strong></div>
+                                    </div>
+                                    <hr />
+                                    @foreach (var post in Model.Posts)
+                                    {
+                                        <div class="row">
+                                            <div class="col-md-8"><a asp-controller="Post" asp-action="PostDetails" asp-route-id="@post.Id">@post.Title</a></div>
+                                            <div class="col-md-4">@post.Likes</div>
+                                        </div>
+                                    }
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="collapseComments">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-md-8"><strong>Todo</strong></div>
+                                        <div class="col-md-4"><strong>Is complete</strong></div>
+                                    </div>
+                                    <hr />
+                                    @foreach (var todo in Model.Todos)
+                                    {
+                                        <div class="row">
+                                            <div class="col-md-8"><a asp-controller="Todo" asp-action="TodoDetails" asp-route-id="@todo.Id">@todo.Name</a></div>
+                                            <div class="col-md-4">
+                                                @if (todo.IsComplete)
+                                                {
+                                                    <span class="badge badge-success">Completed</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge badge-danger">Incomplete</span>
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

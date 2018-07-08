@@ -1,0 +1,11 @@
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\bin\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.deps.json
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\bin\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.runtimeconfig.json
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\bin\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.runtimeconfig.dev.json
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\bin\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.dll
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\bin\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.pdb
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\obj\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.csprojResolveAssemblyReference.cache
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\obj\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.csproj.CoreCompileInputs.cache
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\obj\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.AssemblyInfoInputs.cache
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\obj\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.AssemblyInfo.cs
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\obj\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.dll
+C:\Andrii\Projects\BSA18\L2. ASP.NET MVC\aspnet_core_hw2_Dushkevych\aspnet_core_hw2_Dushkevych\obj\Debug\netcoreapp2.0\aspnet_core_hw2_Dushkevych.pdb

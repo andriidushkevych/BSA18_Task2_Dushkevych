@@ -1,0 +1,50 @@
+﻿@model List<aspnet_core_hw2_Dushkevych.Models.User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>User list</h2>
+<table class="table table-responsive table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Picture</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Posts</th>
+            <th scope="col">Todos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+        <tr>
+            <th scope="row">@user.Id</th>
+            <td><img src="@user.Avatar" alt="@user.Name" /></td>
+            <td><a asp-controller="User" asp-action="Index" asp-route-id="@user.Id">@user.Name</a></td>
+            <td>@user.Email</td>
+            <td>@user.Posts.Count</td>
+            <td>@user.Todos.Count</td>
+            @*<td data-toggle="collapse" data-target="#collapsePosts" class="glyphicon-plus" aria-expanded="false" aria-controls="collapsePosts"></td>*@
+        </tr>
+        
+        @*<tr id="collapsePosts" class="collapse">
+            <tr>
+                <tr class="post">
+                    <th>Username</th>
+                    <th>Body</th>
+                    <th>Likes</th>
+                </tr>
+                <tr class="todo">
+                    <th>Name</th>
+                    <th>Completed</th>
+                </tr>
+            </tr>
+            
+            
+        </tr>*@
+        
+        }
+    </tbody>
+</table>
+
